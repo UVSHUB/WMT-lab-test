@@ -28,11 +28,14 @@ export const getItemById = async (req, res) => {
 // 🔹 CREATE ITEM
 export const createItem = async (req, res) => {
   try {
-    const { name, price, discount } = req.body;
+    const { name, category, price, description, imageUrl, discount } = req.body;
 
     const newItem = new Item({
       name,
+      category,
       price,
+      description,
+      imageUrl,
       discount,
     });
 
