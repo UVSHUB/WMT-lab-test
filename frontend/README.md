@@ -13,6 +13,7 @@
    ```
 
 ## Notes
-- The frontend expects the backend API at `VITE_API_URL`.
+- The frontend can use a relative API path by default: `/api`.
+- For local or remote backends hosted separately, set `VITE_API_URL` in `.env`.
 - Example:
   `VITE_API_URL=http://localhost:5001/api`
